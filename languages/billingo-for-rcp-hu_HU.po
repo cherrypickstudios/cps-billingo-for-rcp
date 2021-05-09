@@ -1,0 +1,145 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: CPS | Billingo for Restrict Content Pro\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-12 11:06+0000\n"
+"PO-Revision-Date: 2021-04-12 11:11+0000\n"
+"Last-Translator: Gabor\n"
+"Language-Team: Magyar\n"
+"Language: hu_HU\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.2; wp-5.7\n"
+"X-Domain: billingo-for-rcp"
+
+#: includes/customers.php:57 includes/customers.php:127
+msgid "Billing address"
+msgstr "Számlázási cím"
+
+#: includes/customers.php:53 includes/customers.php:119
+msgid "Billing name"
+msgstr "Számlázási név"
+
+#: includes/customers.php:172
+msgid "Billingo partner connection log"
+msgstr ""
+
+#: includes/customers.php:163
+msgid "Billingo partner id"
+msgstr ""
+
+#: includes/settings.php:150
+msgid ""
+"Choose whitch block you'd like to generate invoices into and copy-paste its "
+"API ID from <a href=\"https://app.billingo.hu/document-block/list\" "
+"target=\"_blank\">here</a>!"
+msgstr ""
+
+#: includes/customers.php:70 includes/customers.php:140
+msgid "City"
+msgstr "Város"
+
+#: includes/customers.php:198
+msgid "City must be at least 2 characters"
+msgstr "A városnak legalább két karakter hosszúnak kell lennie."
+
+#. Name of the plugin
+msgid "CPS | Billingo for Restrict Content Pro"
+msgstr ""
+
+#: includes/customers.php:436
+msgid "Date"
+msgstr "Dátum"
+
+#. Author of the plugin
+msgid "Gabor Bankuti & Surbma"
+msgstr ""
+
+#: includes/settings.php:147
+msgid ""
+"Generate your billingo api key <a href=\"https://app.billingo.hu/api-key\" "
+"target=\"_blank\">here</a> with reading and writing rule!"
+msgstr ""
+
+#. Description of the plugin
+msgid "Handle the basics with this plugin."
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://author.example.com/"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://example.com/plugins/the-basics/"
+msgstr ""
+
+#: includes/customers.php:437
+msgid "Message"
+msgstr "Üzenet"
+
+#: includes/customers.php:92
+msgid "Only for companies"
+msgstr "Csak cégek esetén"
+
+#: includes/customers.php:86
+msgid "Optional"
+msgstr "Opcionális"
+
+#: includes/customers.php:438
+msgid "Partner id"
+msgstr ""
+
+#: billingo-for-rcp.php:60
+msgid "Please check billingo connection settings."
+msgstr ""
+
+#: includes/customers.php:188
+msgid "Please enter a billing name"
+msgstr "Légy szíves adj meg számlázási nevet"
+
+#: includes/customers.php:196
+msgid "Please enter a city"
+msgstr "Légy szíves adj meg várost"
+
+#: includes/customers.php:192
+msgid "Please enter a zip code"
+msgstr "Légy szíves adj meg irányítószámot"
+
+#: includes/customers.php:202
+msgid "Please enter street & apartment"
+msgstr "Légy szíves adj meg utcát és házszámot"
+
+#: includes/settings.php:92
+msgid "Somthing's wrong with your api key."
+msgstr ""
+
+#: includes/customers.php:79 includes/customers.php:147
+msgid "Street & Apartment"
+msgstr "Utca és házszám"
+
+#: includes/customers.php:204
+msgid "Street & apartment must be at least 2 characters"
+msgstr "Az utca és házszám legalább két karakter hosszú kell, hogy legyen."
+
+#: includes/customers.php:85 includes/customers.php:155
+msgid "Tax number"
+msgstr "Számlaszám"
+
+#: includes/settings.php:106
+msgid "The blockid you set up is wrong or there is no block with this id."
+msgstr ""
+
+#: includes/customers.php:449
+msgid "There is no log to display"
+msgstr ""
+
+#: billingo-for-rcp.php:40
+msgid "To use this plugin you need Restrict Content Pro activated."
+msgstr ""
+
+#: includes/customers.php:61 includes/customers.php:133
+msgid "Zip code"
+msgstr "Irányító szám"
