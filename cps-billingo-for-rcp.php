@@ -3,7 +3,7 @@
  * Plugin Name:       CPS | Billingo for Restrict Content Pro
  * Plugin URI:        https://www.cherrypickstudios.com/
  * Description:       Basic Billingo connection for Restrict Content Pro
- * Version:           0.1.0
+ * Version:           0.2.0
  * Author:            Gabor Bankuti & Surbma
  * Author URI:        https://www.cherrypickstudios.com/
  * License:           GPL v2 or later
