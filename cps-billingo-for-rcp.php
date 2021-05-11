@@ -3,17 +3,22 @@
  * Plugin Name:       CPS | Billingo for Restrict Content Pro
  * Plugin URI:        https://www.cherrypickstudios.com/
  * Description:       Basic Billingo connection for Restrict Content Pro
- * Version:           0.2.1
+ * Version:           0.2.2
  * Author:            Gabor Bankuti & Surbma
  * Author URI:        https://www.cherrypickstudios.com/
  * License:           GPL v2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       billingo-for-rcp
+ * Text Domain:       cps-billingo-for-rcp
  * Domain Path:       /languages
  */
 
 // No direct access
 defined('ABSPATH') or die('Hey, do not do this 😱');
+
+// Localization
+add_action( 'plugins_loaded', function() {
+	load_plugin_textdomain( 'cps-billingo-for-rcp', false, plugin_basename( dirname( __FILE__ ) ) . '/languages' );
+} );
 
 // Const for billingo api url
 if (!defined('BILLINGO_API_URL')) {
@@ -38,7 +43,7 @@ class BillingoForRCP {
 			add_action( 'admin_notices', function() {
 				?>
 				<div class="notice notice-error">
-				<p><?php _e( 'To use this plugin you need Restrict Content Pro activated.', 'billingo-for-rcp' ); ?></p>
+				<p><?php _e( 'To use this plugin you need Restrict Content Pro activated.', 'cps-billingo-for-rcp' ); ?></p>
 				</div>
 				<?php
 			} );
@@ -60,7 +65,7 @@ class BillingoForRCP {
 				add_action( 'admin_notices', function() {
 					?>
 					<div class="notice notice-error">
-					<p><?php _e( 'Please check billingo connection settings.', 'billingo-for-rcp' ); ?></p>
+					<p><?php _e( 'Please check billingo connection settings.', 'cps-billingo-for-rcp' ); ?></p>
 					</div>
 					<?php
 				});
