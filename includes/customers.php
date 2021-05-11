@@ -40,12 +40,15 @@ class B4RCP_Customers {
    * Adds the custom fields to the registration form and profile editor
    */
   public function add_customer_public_fields() {
+    $user_id = get_current_user_id();
+
     // get meta field values
-    $billing_name = get_user_meta( get_current_user_id(), 'b4rcp_billing_name', true );
-    $billing_address_zipcode = get_user_meta( get_current_user_id(), 'b4rcp_billing_address_zipcode', true );
-    $billing_address_city = get_user_meta( get_current_user_id(), 'b4rcp_billing_address_city', true );
-    $billing_address_street = get_user_meta( get_current_user_id(), 'b4rcp_billing_address_street', true );
-    $tax_number   = get_user_meta( get_current_user_id(), 'b4rcp_tax_number', true );
+    $billing_name =                 get_user_meta( $user_id, 'b4rcp_billing_name', true );
+    $billing_address_countrycode =  get_user_meta( $user_id, 'b4rcp_billing_address_countrycode', true );
+    $billing_address_zipcode =      get_user_meta( $user_id, 'b4rcp_billing_address_zipcode', true );
+    $billing_address_city =         get_user_meta( $user_id, 'b4rcp_billing_address_city', true );
+    $billing_address_street =       get_user_meta( $user_id, 'b4rcp_billing_address_street', true );
+    $tax_number =                   get_user_meta( $user_id, 'b4rcp_tax_number', true );
 
     // display input fields
     ?>
@@ -54,7 +57,10 @@ class B4RCP_Customers {
         <input name="b4rcp_billing_name" id="b4rcp_billing_name" type="text" value="<?php echo esc_attr( $billing_name ); ?>"/>
       </p>
       <p>
-        <label for="b4rcp_billing_address_zipcode"><?php _e( 'Billing address', 'billingo-for-rcp' ); ?></label>
+        <label for="b4rcp_billing_address_countrycode"><?php _e( 'Billing address', 'billingo-for-rcp' ); ?></label>
+        <?php echo b4rcp_get_country_select_field( $billing_address_countrycode ? $billing_address_countrycode : 'HU', 'b4rcp_billing_address_countrycode', 'b4rcp_billing_address_countrycode' ); ?>
+      </p>
+      <p>
         <input 
           name="b4rcp_billing_address_zipcode" 
           id="b4rcp_billing_address_zipcode" 
@@ -96,7 +102,6 @@ class B4RCP_Customers {
       </p>
     <?php
   }
- /* <span class="field-desscription"><?php _e( 'Fill for registation as a compmany', 'billingo-for-rcp' ); ?></span> */
 
   /**
    * Adds the custom fields to the customer edit screen on admin
@@ -104,6 +109,7 @@ class B4RCP_Customers {
   public function add_customer_admin_fields( $user_id = 0 ) {
     // get meta field values
     $billing_name = get_user_meta( $user_id, 'b4rcp_billing_name', true );
+    $billing_address_countrycode = get_user_meta( $user_id, 'b4rcp_billing_address_countrycode', true );
     $billing_address_zipcode = get_user_meta( $user_id, 'b4rcp_billing_address_zipcode', true );
     $billing_address_city = get_user_meta( $user_id, 'b4rcp_billing_address_city', true );
     $billing_address_street = get_user_meta( $user_id, 'b4rcp_billing_address_street', true );
@@ -127,27 +133,36 @@ class B4RCP_Customers {
           <label for="b4rcp_billing_address"><?php _e( 'Billing address', 'billingo-for-rcp' ); ?></label>
         </th>
         <td>
-          <input 
-            name="b4rcp_billing_address_zipcode" 
-            id="b4rcp_billing_address_zipcode" 
-            placeholder="<?php _e( 'Zip code', 'billingo-for-rcp' ); ?>" 
-            type="text" 
-            value="<?php echo esc_attr( $billing_address_zipcode ); ?>"
-          />
-          <input 
-            name="b4rcp_billing_address_city" 
-            id="b4rcp_billing_address_city" 
-            placeholder="<?php _e( 'City', 'billingo-for-rcp' ); ?>" 
-            type="text" 
-            value="<?php echo esc_attr( $billing_address_city ); ?>"
-          />
-          <input 
-            name="b4rcp_billing_address_street" 
-            id="b4rcp_billing_address_street" 
-            placeholder="<?php _e( 'Street & Apartment', 'billingo-for-rcp' ); ?>" 
-            type="text" 
-            value="<?php echo esc_attr( $billing_address_street ); ?>"
-          />
+          <p>
+            <?php echo b4rcp_get_country_select_field( $billing_address_countrycode ? $billing_address_countrycode : 'HU', 'b4rcp_billing_address_countrycode', 'b4rcp_billing_address_countrycode' ); ?>
+          </p>
+          <p>
+            <input 
+              name="b4rcp_billing_address_zipcode" 
+              id="b4rcp_billing_address_zipcode" 
+              placeholder="<?php _e( 'Zip code', 'billingo-for-rcp' ); ?>" 
+              type="text" 
+              value="<?php echo esc_attr( $billing_address_zipcode ); ?>"
+            />
+          </p>
+          <p>
+            <input 
+              name="b4rcp_billing_address_city" 
+              id="b4rcp_billing_address_city" 
+              placeholder="<?php _e( 'City', 'billingo-for-rcp' ); ?>" 
+              type="text" 
+              value="<?php echo esc_attr( $billing_address_city ); ?>"
+            />
+          </p>
+          <p>
+            <input 
+              name="b4rcp_billing_address_street" 
+              id="b4rcp_billing_address_street" 
+              placeholder="<?php _e( 'Street & Apartment', 'billingo-for-rcp' ); ?>" 
+              type="text" 
+              value="<?php echo esc_attr( $billing_address_street ); ?>"
+            />
+          </p>
         </td>
       </tr>
       <tr>
@@ -188,6 +203,12 @@ class B4RCP_Customers {
       rcp_errors()->add( 'invalid_billing_name', __( 'Please enter a billing name', 'billingo-for-rcp' ), 'register' );
     }
 
+    if( empty( $posted['b4rcp_billing_address_countrycode'] ) ) {
+      rcp_errors()->add( 'invalid_billing_address_countrycode', __( 'Please enter a country code', 'billingo-for-rcp' ), 'register' );
+    } else if ( strlen($posted['b4rcp_billing_address_countrycode']) != 2  ) {
+      rcp_errors()->add( 'invalid_billing_address_countrycode', __( 'Country code must be 2 characters. E.g. HU, DE, AT etc.', 'billingo-for-rcp' ), 'register' );
+    }
+
     if( empty( $posted['b4rcp_billing_address_zipcode'] ) ) {
       rcp_errors()->add( 'invalid_billing_address_zipcode', __( 'Please enter a zip code', 'billingo-for-rcp' ), 'register' );
     }
@@ -215,6 +236,9 @@ class B4RCP_Customers {
       update_user_meta( $user_id, 'b4rcp_billing_name', sanitize_text_field( $posted['b4rcp_billing_name'] ) );
     }
 
+    if( !empty( $posted['b4rcp_billing_address_countrycode'] ) ) {
+      update_user_meta( $user_id, 'b4rcp_billing_address_countrycode', sanitize_text_field( $posted['b4rcp_billing_address_countrycode']) );
+    }
     if( !empty( $posted['b4rcp_billing_address_zipcode'] ) ) {
       update_user_meta( $user_id, 'b4rcp_billing_address_zipcode', sanitize_text_field( $posted['b4rcp_billing_address_zipcode']) );
     }
@@ -245,6 +269,9 @@ class B4RCP_Customers {
       update_user_meta( $user_id, 'b4rcp_billing_name', sanitize_text_field( $_POST['b4rcp_billing_name'] ) );
     }
 
+    if( !empty( $_POST['b4rcp_billing_address_countrycode'] ) ) {
+      update_user_meta( $user_id, 'b4rcp_billing_address_countrycode', sanitize_text_field( $_POST['b4rcp_billing_address_countrycode'] ) );
+    }
     if( !empty( $_POST['b4rcp_billing_address_zipcode'] ) ) {
       update_user_meta( $user_id, 'b4rcp_billing_address_zipcode', sanitize_text_field( $_POST['b4rcp_billing_address_zipcode'] ) );
     }
@@ -307,9 +334,17 @@ class B4RCP_Customers {
    */
   public function create_billingo_partner( $user_id, $return_with_id = true ) {
     $name = get_user_meta( $user_id, 'b4rcp_billing_name', true );
-		$email = get_userdata(rcp_get_customer($user_id)->get_user_id())->user_email;
+		$email = get_userdata($user_id)->user_email;
+    
+    $country_code = get_user_meta( $user_id, 'b4rcp_billing_address_countrycode', true );
+    if ( !$country_code || strlen( $country_code ) != 2 ) { // set HU is there any is issue with given country code 
+      $country_code = 'HU';
+      update_user_meta( $user_id, 'b4rcp_billing_address_countrycode', $country_code );
+      $this->log_partner_connection( $user_id, 'Something was wrong with the given country code so HU was set instead.' );
+    }
+
 		$address = array( 
-			'country_code'  => 'HU',
+			'country_code'  => $country_code,
 			'post_code' 		=> get_user_meta( $user_id, 'b4rcp_billing_address_zipcode', true ),
 			'city'					=> get_user_meta( $user_id, 'b4rcp_billing_address_city', true ),
 			'address'				=> get_user_meta( $user_id, 'b4rcp_billing_address_street', true ),
@@ -365,9 +400,17 @@ class B4RCP_Customers {
     }
 
     $name = get_user_meta( $user_id, 'b4rcp_billing_name', true );
-		$email = get_userdata(rcp_get_customer($user_id)->get_user_id())->user_email;
+		$email = get_userdata( $user_id )->user_email;
+
+    $country_code = get_user_meta( $user_id, 'b4rcp_billing_address_countrycode', true );
+    if ( !$country_code || strlen( $country_code ) != 2 ) { // set HU is there any is issue with given country code 
+      $country_code = 'HU';
+      update_user_meta( $user_id, 'b4rcp_billing_address_countrycode', $country_code );
+      $this->log_partner_connection( $user_id, 'Something was wrong with the given country code so HU was set instead.' );
+    }
+
 		$address = array( 
-			'country_code'  => 'HU',
+			'country_code'  => $country_code,
 			'post_code' 		=> get_user_meta( $user_id, 'b4rcp_billing_address_zipcode', true ),
 			'city'					=> get_user_meta( $user_id, 'b4rcp_billing_address_city', true ),
 			'address'				=> get_user_meta( $user_id, 'b4rcp_billing_address_street', true ),
@@ -381,6 +424,7 @@ class B4RCP_Customers {
       $partner->emails[0] == $email && 
       $partner->taxcode == $tax_number && 
       $partner->tax_type == $tax_type && 
+      $partner->address->country_code == $address['country_code'] && 
       $partner->address->post_code == $address['post_code'] && 
       $partner->address->city == $address['city'] &&
       $partner->address->address == $address['address']

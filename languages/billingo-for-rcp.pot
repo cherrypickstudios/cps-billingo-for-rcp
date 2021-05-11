@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CPS | Billingo for Restrict Content Pro\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 11:06+0000\n"
+"POT-Creation-Date: 2021-05-11 07:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -16,131 +16,1140 @@ msgstr ""
 "X-Loco-Version: 2.5.2; wp-5.7\n"
 "X-Domain: billingo-for-rcp"
 
-#: includes/customers.php:57 includes/customers.php:127
+#: includes/utils-countries.php:7
+msgid "Afghanistan"
+msgstr ""
+
+#: includes/utils-countries.php:9
+msgid "Albania"
+msgstr ""
+
+#: includes/utils-countries.php:10
+msgid "Algeria"
+msgstr ""
+
+#: includes/utils-countries.php:11
+msgid "American Samoa"
+msgstr ""
+
+#: includes/utils-countries.php:12
+msgid "Andorra"
+msgstr ""
+
+#: includes/utils-countries.php:13
+msgid "Angola"
+msgstr ""
+
+#: includes/utils-countries.php:14
+msgid "Anguilla"
+msgstr ""
+
+#: includes/utils-countries.php:15
+msgid "Antarctica"
+msgstr ""
+
+#: includes/utils-countries.php:16
+msgid "Antigua and Barbuda"
+msgstr ""
+
+#: includes/utils-countries.php:17
+msgid "Argentina"
+msgstr ""
+
+#: includes/utils-countries.php:18
+msgid "Armenia"
+msgstr ""
+
+#: includes/utils-countries.php:19
+msgid "Aruba"
+msgstr ""
+
+#: includes/utils-countries.php:20
+msgid "Australia"
+msgstr ""
+
+#: includes/utils-countries.php:21
+msgid "Austria"
+msgstr ""
+
+#: includes/utils-countries.php:22
+msgid "Azerbaijan"
+msgstr ""
+
+#: includes/utils-countries.php:23
+msgid "Bahamas"
+msgstr ""
+
+#: includes/utils-countries.php:24
+msgid "Bahrain"
+msgstr ""
+
+#: includes/utils-countries.php:25
+msgid "Bangladesh"
+msgstr ""
+
+#: includes/utils-countries.php:26
+msgid "Barbados"
+msgstr ""
+
+#. Description of the plugin
+msgid "Basic Billingo connection for Restrict Content Pro"
+msgstr ""
+
+#: includes/settings.php:123
+msgid ""
+"Before you set api key and block id please make sure that you filled out <a "
+"href=\"https://app.billingo.hu/organization-setting/profile\" "
+"target=\"_blank\">organization settings</a> correctly. To test it, make an "
+"invoice manually!"
+msgstr ""
+
+#: includes/utils-countries.php:27
+msgid "Belarus"
+msgstr ""
+
+#: includes/utils-countries.php:29
+msgid "Belau"
+msgstr ""
+
+#: includes/utils-countries.php:28
+msgid "Belgium"
+msgstr ""
+
+#: includes/utils-countries.php:30
+msgid "Belize"
+msgstr ""
+
+#: includes/utils-countries.php:31
+msgid "Benin"
+msgstr ""
+
+#: includes/utils-countries.php:32
+msgid "Bermuda"
+msgstr ""
+
+#: includes/utils-countries.php:33
+msgid "Bhutan"
+msgstr ""
+
+#: includes/customers.php:60 includes/customers.php:133
 msgid "Billing address"
 msgstr ""
 
-#: includes/customers.php:53 includes/customers.php:119
+#: includes/customers.php:56 includes/customers.php:125
 msgid "Billing name"
 msgstr ""
 
-#: includes/customers.php:172
+#: includes/customers.php:187
 msgid "Billingo partner connection log"
 msgstr ""
 
-#: includes/customers.php:163
+#: includes/customers.php:178
 msgid "Billingo partner id"
 msgstr ""
 
-#: includes/settings.php:150
+#: includes/utils-countries.php:34
+msgid "Bolivia"
+msgstr ""
+
+#: includes/utils-countries.php:35
+msgid "Bonaire, Saint Eustatius and Saba"
+msgstr ""
+
+#: includes/utils-countries.php:36
+msgid "Bosnia and Herzegovina"
+msgstr ""
+
+#: includes/utils-countries.php:37
+msgid "Botswana"
+msgstr ""
+
+#: includes/utils-countries.php:38
+msgid "Bouvet Island"
+msgstr ""
+
+#: includes/utils-countries.php:39
+msgid "Brazil"
+msgstr ""
+
+#: includes/utils-countries.php:40
+msgid "British Indian Ocean Territory"
+msgstr ""
+
+#: includes/utils-countries.php:41
+msgid "Brunei"
+msgstr ""
+
+#: includes/utils-countries.php:42
+msgid "Bulgaria"
+msgstr ""
+
+#: includes/utils-countries.php:43
+msgid "Burkina Faso"
+msgstr ""
+
+#: includes/utils-countries.php:44
+msgid "Burundi"
+msgstr ""
+
+#: includes/utils-countries.php:45
+msgid "Cambodia"
+msgstr ""
+
+#: includes/utils-countries.php:46
+msgid "Cameroon"
+msgstr ""
+
+#: includes/utils-countries.php:47
+msgid "Canada"
+msgstr ""
+
+#: includes/utils-countries.php:48
+msgid "Cape Verde"
+msgstr ""
+
+#: includes/utils-countries.php:49
+msgid "Cayman Islands"
+msgstr ""
+
+#: includes/utils-countries.php:50
+msgid "Central African Republic"
+msgstr ""
+
+#: includes/utils-countries.php:51
+msgid "Chad"
+msgstr ""
+
+#: includes/utils-countries.php:52
+msgid "Chile"
+msgstr ""
+
+#: includes/utils-countries.php:53
+msgid "China"
+msgstr ""
+
+#: includes/settings.php:151
 msgid ""
 "Choose whitch block you'd like to generate invoices into and copy-paste its "
 "API ID from <a href=\"https://app.billingo.hu/document-block/list\" "
 "target=\"_blank\">here</a>!"
 msgstr ""
 
-#: includes/customers.php:70 includes/customers.php:140
+#: includes/utils-countries.php:54
+msgid "Christmas Island"
+msgstr ""
+
+#: includes/customers.php:76 includes/customers.php:152
 msgid "City"
 msgstr ""
 
-#: includes/customers.php:198
+#: includes/customers.php:219
 msgid "City must be at least 2 characters"
+msgstr ""
+
+#: includes/utils-countries.php:55
+msgid "Cocos (Keeling) Islands"
+msgstr ""
+
+#: includes/utils-countries.php:56
+msgid "Colombia"
+msgstr ""
+
+#: includes/utils-countries.php:57
+msgid "Comoros"
+msgstr ""
+
+#: includes/utils-countries.php:58
+msgid "Congo (Brazzaville)"
+msgstr ""
+
+#: includes/utils-countries.php:59
+msgid "Congo (Kinshasa)"
+msgstr ""
+
+#: includes/utils-countries.php:60
+msgid "Cook Islands"
+msgstr ""
+
+#: includes/utils-countries.php:61
+msgid "Costa Rica"
+msgstr ""
+
+#: includes/customers.php:209
+msgid "Country code must be 2 characters. E.g. HU, DE, AT etc."
 msgstr ""
 
 #. Name of the plugin
 msgid "CPS | Billingo for Restrict Content Pro"
 msgstr ""
 
-#: includes/customers.php:436
+#: includes/utils-countries.php:62
+msgid "Croatia"
+msgstr ""
+
+#: includes/utils-countries.php:63
+msgid "Cuba"
+msgstr ""
+
+#: includes/utils-countries.php:64
+msgid "Cura&ccedil;ao"
+msgstr ""
+
+#: includes/utils-countries.php:65
+msgid "Cyprus"
+msgstr ""
+
+#: includes/utils-countries.php:66
+msgid "Czech Republic"
+msgstr ""
+
+#: includes/customers.php:480
 msgid "Date"
+msgstr ""
+
+#: includes/utils-countries.php:67
+msgid "Denmark"
+msgstr ""
+
+#: includes/utils-countries.php:68
+msgid "Djibouti"
+msgstr ""
+
+#: includes/utils-countries.php:69
+msgid "Dominica"
+msgstr ""
+
+#: includes/utils-countries.php:70
+msgid "Dominican Republic"
+msgstr ""
+
+#: includes/utils-countries.php:71
+msgid "Ecuador"
+msgstr ""
+
+#: includes/utils-countries.php:72
+msgid "Egypt"
+msgstr ""
+
+#: includes/utils-countries.php:73
+msgid "El Salvador"
+msgstr ""
+
+#: includes/utils-countries.php:74
+msgid "Equatorial Guinea"
+msgstr ""
+
+#: includes/utils-countries.php:75
+msgid "Eritrea"
+msgstr ""
+
+#: includes/utils-countries.php:76
+msgid "Estonia"
+msgstr ""
+
+#: includes/utils-countries.php:77
+msgid "Ethiopia"
+msgstr ""
+
+#: includes/utils-countries.php:78
+msgid "Falkland Islands"
+msgstr ""
+
+#: includes/utils-countries.php:79
+msgid "Faroe Islands"
+msgstr ""
+
+#: includes/utils-countries.php:80
+msgid "Fiji"
+msgstr ""
+
+#: includes/utils-countries.php:81
+msgid "Finland"
+msgstr ""
+
+#: includes/utils-countries.php:82
+msgid "France"
+msgstr ""
+
+#: includes/utils-countries.php:83
+msgid "French Guiana"
+msgstr ""
+
+#: includes/utils-countries.php:84
+msgid "French Polynesia"
+msgstr ""
+
+#: includes/utils-countries.php:85
+msgid "French Southern Territories"
+msgstr ""
+
+#: includes/utils-countries.php:86
+msgid "Gabon"
 msgstr ""
 
 #. Author of the plugin
 msgid "Gabor Bankuti & Surbma"
 msgstr ""
 
-#: includes/settings.php:147
+#: includes/utils-countries.php:87
+msgid "Gambia"
+msgstr ""
+
+#: includes/settings.php:148
 msgid ""
 "Generate your billingo api key <a href=\"https://app.billingo.hu/api-key\" "
 "target=\"_blank\">here</a> with reading and writing rule!"
 msgstr ""
 
-#. Description of the plugin
-msgid "Handle the basics with this plugin."
+#: includes/utils-countries.php:88
+msgid "Georgia"
 msgstr ""
 
-#. Author URI of the plugin
-msgid "https://author.example.com/"
+#: includes/utils-countries.php:89
+msgid "Germany"
+msgstr ""
+
+#: includes/utils-countries.php:90
+msgid "Ghana"
+msgstr ""
+
+#: includes/utils-countries.php:91
+msgid "Gibraltar"
+msgstr ""
+
+#: includes/utils-countries.php:92
+msgid "Greece"
+msgstr ""
+
+#: includes/utils-countries.php:93
+msgid "Greenland"
+msgstr ""
+
+#: includes/utils-countries.php:94
+msgid "Grenada"
+msgstr ""
+
+#: includes/utils-countries.php:95
+msgid "Guadeloupe"
+msgstr ""
+
+#: includes/utils-countries.php:96
+msgid "Guam"
+msgstr ""
+
+#: includes/utils-countries.php:97
+msgid "Guatemala"
+msgstr ""
+
+#: includes/utils-countries.php:98
+msgid "Guernsey"
+msgstr ""
+
+#: includes/utils-countries.php:99
+msgid "Guinea"
+msgstr ""
+
+#: includes/utils-countries.php:100
+msgid "Guinea-Bissau"
+msgstr ""
+
+#: includes/utils-countries.php:101
+msgid "Guyana"
+msgstr ""
+
+#: includes/utils-countries.php:102
+msgid "Haiti"
+msgstr ""
+
+#: includes/utils-countries.php:103
+msgid "Heard Island and McDonald Islands"
+msgstr ""
+
+#: includes/utils-countries.php:104
+msgid "Honduras"
+msgstr ""
+
+#: includes/utils-countries.php:105
+msgid "Hong Kong"
 msgstr ""
 
 #. URI of the plugin
-msgid "https://example.com/plugins/the-basics/"
+#. Author URI of the plugin
+msgid "https://www.cherrypickstudios.com/"
 msgstr ""
 
-#: includes/customers.php:437
+#: includes/utils-countries.php:106
+msgid "Hungary"
+msgstr ""
+
+#: includes/utils-countries.php:107
+msgid "Iceland"
+msgstr ""
+
+#: includes/utils-countries.php:108
+msgid "India"
+msgstr ""
+
+#: includes/utils-countries.php:109
+msgid "Indonesia"
+msgstr ""
+
+#: includes/utils-countries.php:110
+msgid "Iran"
+msgstr ""
+
+#: includes/utils-countries.php:111
+msgid "Iraq"
+msgstr ""
+
+#: includes/utils-countries.php:112
+msgid "Ireland"
+msgstr ""
+
+#: includes/utils-countries.php:113
+msgid "Isle of Man"
+msgstr ""
+
+#: includes/utils-countries.php:114
+msgid "Israel"
+msgstr ""
+
+#: includes/utils-countries.php:115
+msgid "Italy"
+msgstr ""
+
+#: includes/utils-countries.php:116
+msgid "Ivory Coast"
+msgstr ""
+
+#: includes/utils-countries.php:117
+msgid "Jamaica"
+msgstr ""
+
+#: includes/utils-countries.php:118
+msgid "Japan"
+msgstr ""
+
+#: includes/utils-countries.php:119
+msgid "Jersey"
+msgstr ""
+
+#: includes/utils-countries.php:120
+msgid "Jordan"
+msgstr ""
+
+#: includes/utils-countries.php:121
+msgid "Kazakhstan"
+msgstr ""
+
+#: includes/utils-countries.php:122
+msgid "Kenya"
+msgstr ""
+
+#: includes/utils-countries.php:123
+msgid "Kiribati"
+msgstr ""
+
+#: includes/utils-countries.php:124
+msgid "Kuwait"
+msgstr ""
+
+#: includes/utils-countries.php:125
+msgid "Kyrgyzstan"
+msgstr ""
+
+#: includes/utils-countries.php:126
+msgid "Laos"
+msgstr ""
+
+#: includes/utils-countries.php:127
+msgid "Latvia"
+msgstr ""
+
+#: includes/utils-countries.php:128
+msgid "Lebanon"
+msgstr ""
+
+#: includes/utils-countries.php:129
+msgid "Lesotho"
+msgstr ""
+
+#: includes/utils-countries.php:130
+msgid "Liberia"
+msgstr ""
+
+#: includes/utils-countries.php:131
+msgid "Libya"
+msgstr ""
+
+#: includes/utils-countries.php:132
+msgid "Liechtenstein"
+msgstr ""
+
+#: includes/utils-countries.php:133
+msgid "Lithuania"
+msgstr ""
+
+#: includes/utils-countries.php:134
+msgid "Luxembourg"
+msgstr ""
+
+#: includes/utils-countries.php:135
+msgid "Macao"
+msgstr ""
+
+#: includes/utils-countries.php:137
+msgid "Madagascar"
+msgstr ""
+
+#: includes/utils-countries.php:138
+msgid "Malawi"
+msgstr ""
+
+#: includes/utils-countries.php:139
+msgid "Malaysia"
+msgstr ""
+
+#: includes/utils-countries.php:140
+msgid "Maldives"
+msgstr ""
+
+#: includes/utils-countries.php:141
+msgid "Mali"
+msgstr ""
+
+#: includes/utils-countries.php:142
+msgid "Malta"
+msgstr ""
+
+#: includes/utils-countries.php:143
+msgid "Marshall Islands"
+msgstr ""
+
+#: includes/utils-countries.php:144
+msgid "Martinique"
+msgstr ""
+
+#: includes/utils-countries.php:145
+msgid "Mauritania"
+msgstr ""
+
+#: includes/utils-countries.php:146
+msgid "Mauritius"
+msgstr ""
+
+#: includes/utils-countries.php:147
+msgid "Mayotte"
+msgstr ""
+
+#: includes/customers.php:481
 msgid "Message"
 msgstr ""
 
-#: includes/customers.php:92
+#: includes/utils-countries.php:148
+msgid "Mexico"
+msgstr ""
+
+#: includes/utils-countries.php:149
+msgid "Micronesia"
+msgstr ""
+
+#: includes/utils-countries.php:150
+msgid "Moldova"
+msgstr ""
+
+#: includes/utils-countries.php:151
+msgid "Monaco"
+msgstr ""
+
+#: includes/utils-countries.php:152
+msgid "Mongolia"
+msgstr ""
+
+#: includes/utils-countries.php:153
+msgid "Montenegro"
+msgstr ""
+
+#: includes/utils-countries.php:154
+msgid "Montserrat"
+msgstr ""
+
+#: includes/utils-countries.php:155
+msgid "Morocco"
+msgstr ""
+
+#: includes/utils-countries.php:156
+msgid "Mozambique"
+msgstr ""
+
+#: includes/utils-countries.php:157
+msgid "Myanmar"
+msgstr ""
+
+#: includes/utils-countries.php:158
+msgid "Namibia"
+msgstr ""
+
+#: includes/utils-countries.php:159
+msgid "Nauru"
+msgstr ""
+
+#: includes/utils-countries.php:160
+msgid "Nepal"
+msgstr ""
+
+#: includes/utils-countries.php:161
+msgid "Netherlands"
+msgstr ""
+
+#: includes/utils-countries.php:162
+msgid "New Caledonia"
+msgstr ""
+
+#: includes/utils-countries.php:163
+msgid "New Zealand"
+msgstr ""
+
+#: includes/utils-countries.php:164
+msgid "Nicaragua"
+msgstr ""
+
+#: includes/utils-countries.php:165
+msgid "Niger"
+msgstr ""
+
+#: includes/utils-countries.php:166
+msgid "Nigeria"
+msgstr ""
+
+#: includes/utils-countries.php:167
+msgid "Niue"
+msgstr ""
+
+#: includes/utils-countries.php:168
+msgid "Norfolk Island"
+msgstr ""
+
+#: includes/utils-countries.php:170
+msgid "North Korea"
+msgstr ""
+
+#: includes/utils-countries.php:136
+msgid "North Macedonia"
+msgstr ""
+
+#: includes/utils-countries.php:169
+msgid "Northern Mariana Islands"
+msgstr ""
+
+#: includes/utils-countries.php:171
+msgid "Norway"
+msgstr ""
+
+#: includes/utils-countries.php:172
+msgid "Oman"
+msgstr ""
+
+#: includes/customers.php:98
 msgid "Only for companies"
 msgstr ""
 
-#: includes/customers.php:86
+#: includes/customers.php:92
 msgid "Optional"
 msgstr ""
 
-#: includes/customers.php:438
+#: includes/utils-countries.php:173
+msgid "Pakistan"
+msgstr ""
+
+#: includes/utils-countries.php:174
+msgid "Palestinian Territory"
+msgstr ""
+
+#: includes/utils-countries.php:175
+msgid "Panama"
+msgstr ""
+
+#: includes/utils-countries.php:176
+msgid "Papua New Guinea"
+msgstr ""
+
+#: includes/utils-countries.php:177
+msgid "Paraguay"
+msgstr ""
+
+#: includes/customers.php:482
 msgid "Partner id"
 msgstr ""
 
-#: billingo-for-rcp.php:60
+#: includes/utils-countries.php:178
+msgid "Peru"
+msgstr ""
+
+#: includes/utils-countries.php:179
+msgid "Philippines"
+msgstr ""
+
+#: includes/utils-countries.php:180
+msgid "Pitcairn"
+msgstr ""
+
+#: cps-billingo-for-rcp.php:61
 msgid "Please check billingo connection settings."
 msgstr ""
 
-#: includes/customers.php:188
+#: includes/customers.php:203
 msgid "Please enter a billing name"
 msgstr ""
 
-#: includes/customers.php:196
+#: includes/customers.php:217
 msgid "Please enter a city"
 msgstr ""
 
-#: includes/customers.php:192
+#: includes/customers.php:207
+msgid "Please enter a country code"
+msgstr ""
+
+#: includes/customers.php:213
 msgid "Please enter a zip code"
 msgstr ""
 
-#: includes/customers.php:202
+#: includes/customers.php:223
 msgid "Please enter street & apartment"
+msgstr ""
+
+#: includes/utils-countries.php:181
+msgid "Poland"
+msgstr ""
+
+#: includes/utils-countries.php:182
+msgid "Portugal"
+msgstr ""
+
+#: includes/utils-countries.php:183
+msgid "Puerto Rico"
+msgstr ""
+
+#: includes/utils-countries.php:184
+msgid "Qatar"
+msgstr ""
+
+#: includes/utils-countries.php:185
+msgid "Reunion"
+msgstr ""
+
+#: includes/utils-countries.php:186
+msgid "Romania"
+msgstr ""
+
+#: includes/utils-countries.php:187
+msgid "Russia"
+msgstr ""
+
+#: includes/utils-countries.php:188
+msgid "Rwanda"
+msgstr ""
+
+#: includes/utils-countries.php:198
+msgid "S&atilde;o Tom&eacute; and Pr&iacute;ncipe"
+msgstr ""
+
+#: includes/utils-countries.php:189
+msgid "Saint Barth&eacute;lemy"
+msgstr ""
+
+#: includes/utils-countries.php:190
+msgid "Saint Helena"
+msgstr ""
+
+#: includes/utils-countries.php:191
+msgid "Saint Kitts and Nevis"
+msgstr ""
+
+#: includes/utils-countries.php:192
+msgid "Saint Lucia"
+msgstr ""
+
+#: includes/utils-countries.php:194
+msgid "Saint Martin (Dutch part)"
+msgstr ""
+
+#: includes/utils-countries.php:193
+msgid "Saint Martin (French part)"
+msgstr ""
+
+#: includes/utils-countries.php:195
+msgid "Saint Pierre and Miquelon"
+msgstr ""
+
+#: includes/utils-countries.php:196
+msgid "Saint Vincent and the Grenadines"
+msgstr ""
+
+#: includes/utils-countries.php:252
+msgid "Samoa"
+msgstr ""
+
+#: includes/utils-countries.php:197
+msgid "San Marino"
+msgstr ""
+
+#: includes/utils-countries.php:199
+msgid "Saudi Arabia"
+msgstr ""
+
+#: includes/utils-countries.php:200
+msgid "Senegal"
+msgstr ""
+
+#: includes/utils-countries.php:201
+msgid "Serbia"
+msgstr ""
+
+#: includes/utils-countries.php:202
+msgid "Seychelles"
+msgstr ""
+
+#: includes/utils-countries.php:203
+msgid "Sierra Leone"
+msgstr ""
+
+#: includes/utils-countries.php:204
+msgid "Singapore"
+msgstr ""
+
+#: includes/utils-countries.php:205
+msgid "Slovakia"
+msgstr ""
+
+#: includes/utils-countries.php:206
+msgid "Slovenia"
+msgstr ""
+
+#: includes/utils-countries.php:207
+msgid "Solomon Islands"
+msgstr ""
+
+#: includes/utils-countries.php:208
+msgid "Somalia"
 msgstr ""
 
 #: includes/settings.php:92
 msgid "Somthing's wrong with your api key."
 msgstr ""
 
-#: includes/customers.php:79 includes/customers.php:147
+#: includes/utils-countries.php:209
+msgid "South Africa"
+msgstr ""
+
+#: includes/utils-countries.php:210
+msgid "South Georgia/Sandwich Islands"
+msgstr ""
+
+#: includes/utils-countries.php:211
+msgid "South Korea"
+msgstr ""
+
+#: includes/utils-countries.php:212
+msgid "South Sudan"
+msgstr ""
+
+#: includes/utils-countries.php:213
+msgid "Spain"
+msgstr ""
+
+#: includes/utils-countries.php:214
+msgid "Sri Lanka"
+msgstr ""
+
+#: includes/customers.php:85 includes/customers.php:161
 msgid "Street & Apartment"
 msgstr ""
 
-#: includes/customers.php:204
+#: includes/customers.php:225
 msgid "Street & apartment must be at least 2 characters"
 msgstr ""
 
-#: includes/customers.php:85 includes/customers.php:155
+#: includes/utils-countries.php:215
+msgid "Sudan"
+msgstr ""
+
+#: includes/utils-countries.php:216
+msgid "Suriname"
+msgstr ""
+
+#: includes/utils-countries.php:217
+msgid "Svalbard and Jan Mayen"
+msgstr ""
+
+#: includes/utils-countries.php:218
+msgid "Swaziland"
+msgstr ""
+
+#: includes/utils-countries.php:219
+msgid "Sweden"
+msgstr ""
+
+#: includes/utils-countries.php:220
+msgid "Switzerland"
+msgstr ""
+
+#: includes/utils-countries.php:221
+msgid "Syria"
+msgstr ""
+
+#: includes/utils-countries.php:222
+msgid "Taiwan"
+msgstr ""
+
+#: includes/utils-countries.php:223
+msgid "Tajikistan"
+msgstr ""
+
+#: includes/utils-countries.php:224
+msgid "Tanzania"
+msgstr ""
+
+#: includes/customers.php:91 includes/customers.php:170
 msgid "Tax number"
+msgstr ""
+
+#: includes/utils-countries.php:225
+msgid "Thailand"
 msgstr ""
 
 #: includes/settings.php:106
 msgid "The blockid you set up is wrong or there is no block with this id."
 msgstr ""
 
-#: includes/customers.php:449
+#: includes/customers.php:493
 msgid "There is no log to display"
 msgstr ""
 
-#: billingo-for-rcp.php:40
+#: includes/utils-countries.php:226
+msgid "Timor-Leste"
+msgstr ""
+
+#: cps-billingo-for-rcp.php:40
 msgid "To use this plugin you need Restrict Content Pro activated."
 msgstr ""
 
-#: includes/customers.php:61 includes/customers.php:133
+#: includes/utils-countries.php:227
+msgid "Togo"
+msgstr ""
+
+#: includes/utils-countries.php:228
+msgid "Tokelau"
+msgstr ""
+
+#: includes/utils-countries.php:229
+msgid "Tonga"
+msgstr ""
+
+#: includes/utils-countries.php:230
+msgid "Trinidad and Tobago"
+msgstr ""
+
+#: includes/utils-countries.php:231
+msgid "Tunisia"
+msgstr ""
+
+#: includes/utils-countries.php:232
+msgid "Turkey"
+msgstr ""
+
+#: includes/utils-countries.php:233
+msgid "Turkmenistan"
+msgstr ""
+
+#: includes/utils-countries.php:234
+msgid "Turks and Caicos Islands"
+msgstr ""
+
+#: includes/utils-countries.php:235
+msgid "Tuvalu"
+msgstr ""
+
+#: includes/utils-countries.php:236
+msgid "Uganda"
+msgstr ""
+
+#: includes/utils-countries.php:237
+msgid "Ukraine"
+msgstr ""
+
+#: includes/utils-countries.php:238
+msgid "United Arab Emirates"
+msgstr ""
+
+#: includes/utils-countries.php:239
+msgid "United Kingdom (UK)"
+msgstr ""
+
+#: includes/utils-countries.php:240
+msgid "United States (US)"
+msgstr ""
+
+#: includes/utils-countries.php:241
+msgid "United States (US) Minor Outlying Islands"
+msgstr ""
+
+#: includes/utils-countries.php:242
+msgid "Uruguay"
+msgstr ""
+
+#: includes/utils-countries.php:243
+msgid "Uzbekistan"
+msgstr ""
+
+#: includes/utils-countries.php:244
+msgid "Vanuatu"
+msgstr ""
+
+#: includes/utils-countries.php:245
+msgid "Vatican"
+msgstr ""
+
+#: includes/utils-countries.php:246
+msgid "Venezuela"
+msgstr ""
+
+#: includes/utils-countries.php:247
+msgid "Vietnam"
+msgstr ""
+
+#: includes/utils-countries.php:248
+msgid "Virgin Islands (British)"
+msgstr ""
+
+#: includes/utils-countries.php:249
+msgid "Virgin Islands (US)"
+msgstr ""
+
+#: includes/utils-countries.php:250
+msgid "Wallis and Futuna"
+msgstr ""
+
+#: includes/utils-countries.php:251
+msgid "Western Sahara"
+msgstr ""
+
+#: includes/utils-countries.php:253
+msgid "Yemen"
+msgstr ""
+
+#: includes/utils-countries.php:254
+msgid "Zambia"
+msgstr ""
+
+#: includes/utils-countries.php:255
+msgid "Zimbabwe"
+msgstr ""
+
+#: includes/customers.php:67 includes/customers.php:143
 msgid "Zip code"
+msgstr ""
+
+#: includes/utils-countries.php:8
+msgid "Åland Islands"
 msgstr ""
