@@ -120,6 +120,7 @@ class B4RCP_Settings {
   public function plugin_settings_page_content() { ?>
     <div class="wrap">
       <h2>Billingo settings</h2>
+      <p><?php _e('Before you set api key and block id please make sure that you filled out <a href="https://app.billingo.hu/organization-setting/profile" target="_blank">organization settings</a> correctly. To test it, make an invoice manually!', 'billingo-for-rcp' ); ?></p>
       <form method="post" action="options.php">
           <?php
             settings_fields( 'b4rcp_billingo' );

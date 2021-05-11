@@ -53,6 +53,7 @@ class BillingoForRCP {
       
       // utility functions
       require_once plugin_dir_path( __FILE__ ) . 'includes/utils.php';
+      require_once plugin_dir_path( __FILE__ ) . 'includes/utils-countries.php';
 
       if( !b4rcp_is_connected() ) {
         add_action( 'admin_notices', function() { ?>
