@@ -79,13 +79,38 @@ class B4RCP_Payments {
 		$response_code = wp_remote_retrieve_response_code( $response );
 		$response_body = wp_remote_retrieve_body( $response );
 
-		if( $response_code != 201 ) {
+		if( $response_code == 201 ) {
+			$this->send_billingo_document( $user_id, json_decode($response_body)->id );
+		} else {
 			B4RCP_Customers::get_instance()->log_partner_connection( $user_id, 'Error while creating billingo document. </br>Response code: '. $response_code .'</br>Response body: '. $response_body );
 			if( $response_code == 401) {
 				b4rcp_invalidate_connection();
 			}
 		}
 
+	}
+
+	public function send_billingo_document( $user_id, $document_id ) {
+		$email = get_userdata($user_id)->user_email;
+
+		$args = array(
+			'method' => 'POST',
+			'headers' => array(
+				'X-API-KEY' => b4rcp_get_api_key(),
+			),
+			'body' 		=> json_encode( array(
+				'emails' => [$email],
+			)),
+		);
+		$url = BILLINGO_API_URL .'/documents/'. $document_id .'/send';
+
+		$response = wp_remote_request( $url, $args );
+		$response_code = wp_remote_retrieve_response_code( $response );
+		$response_body = wp_remote_retrieve_body( $response );
+
+		if( $response_code != 200 ) {
+			B4RCP_Customers::get_instance()->log_partner_connection( $user_id, 'Error while sending billingo document. </br>Response code: '. $response_code .'</br>Response body: '. $response_body );
+		}
 	}
 
 }
