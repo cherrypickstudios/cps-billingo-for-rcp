@@ -318,7 +318,7 @@ class B4RCP_Customers {
 
 		}
 
-		$this->log_partner_connection( $user_id, 'Billingo partner with this id is deleted or the could not be found. </br>Response code: '. $response_code );
+		$this->log_partner_connection( $user_id, 'Billingo partner with this id ('. $partner_id .') is deleted or could not be found. </br>Response code: '. $response_code );
 		$partner = $this->create_billingo_partner( $user_id, false );
 		if( $partner ) {
 			update_user_meta( $user_id, 'b4rcp_partner_id', $partner->id );
