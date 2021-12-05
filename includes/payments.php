@@ -39,6 +39,10 @@ class B4RCP_Payments {
 		$subscription = $payment->subscription;
 		$amount = $payment->amount;
 
+		if( !$amount ){
+			return;
+		}
+
 		// updates billingo partner
 		B4RCP_Customers::get_instance()->update_billingo_partner( $user_id );
 		// get billingo partner id
